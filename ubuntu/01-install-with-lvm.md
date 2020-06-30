@@ -265,7 +265,58 @@ vmuser@ubt-202006:~$ sudo lvs
   swap_1 vgubuntu -wi-ao---- 980.00m
 ```
 
-More detailed information are available with the `pvdisplay` and `lvdisplay` commands.
+Here are more detailed information with `pvdisplay` and `lvdisplay` commands:
+
+```console
+vmuser@ubt-202006:~$ sudo pvdisplay
+  --- Physical volume ---
+  PV Name               /dev/sda5
+  VG Name               vgubuntu
+  PV Size               <79.50 GiB / not usable 0   
+  Allocatable           yes (but full)
+  PE Size               4.00 MiB
+  Total PE              20351
+  Free PE               0
+  Allocated PE          20351
+  PV UUID               wYaz40-dKqp-FiFf-iRWi-N2wR-yuRu-3IL3k5
+```
+
+```console
+vmuser@ubt-202006:~$ sudo lvdisplay
+  --- Logical volume ---
+  LV Path                /dev/vgubuntu/root
+  LV Name                root
+  VG Name                vgubuntu
+  LV UUID                maVbwo-NPfn-m6oc-reEv-f9N7-e2kf-vMuj3Y
+  LV Write Access        read/write
+  LV Creation host, time ubuntu, 2020-06-29 08:12:15 -0700
+  LV Status              available
+  # open                 1
+  LV Size                <78.54 GiB
+  Current LE             20106
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     256
+  Block device           253:0
+   
+  --- Logical volume ---
+  LV Path                /dev/vgubuntu/swap_1
+  LV Name                swap_1
+  VG Name                vgubuntu
+  LV UUID                GV9MRf-LXxc-1ZLH-eqpt-49FM-zwit-oFYPK9
+  LV Write Access        read/write
+  LV Creation host, time ubuntu, 2020-06-29 08:12:16 -0700
+  LV Status              available
+  # open                 2
+  LV Size                980.00 MiB
+  Current LE             245
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     256
+  Block device           253:1
+```
 
 ## 5. Conclusion
 
