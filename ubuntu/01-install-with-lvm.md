@@ -325,4 +325,4 @@ root partition to reduce its size, and create a new data partition in
 the `vgubuntu` group using the freed up space. We can then relocate
 the entire `/home` directory to this new partition.
 
-See the next guide [create home partition](02-create-home-with-lvm.md) for more information.
+See the next guide [create data partition](02-create-data-with-lvm.md) for more information.
