@@ -1,3 +1,8 @@
+---
+layout: post
+title:  "Create Data Partition With LVM"
+---
+
 # Create Data Partition With LVM
 
 Create separate data partition using Logical Volume Management (LVM).
