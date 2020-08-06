@@ -1,8 +1,3 @@
----
-layout: post
-title:  "Install Ubuntu with LVM"
----
-
 # Install Ubuntu With LVM
 
 Install Ubuntu and setup the disk using Logical Volume Management (LVM).
